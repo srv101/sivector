@@ -22,6 +22,14 @@ async function handalSubmit(e) {
 
   handalChange();
 
+  const submit_btn = document.getElementById("submit");
+  const spinner = document.getElementById("spinner");
+
+  // adding spinner effect
+  submit_btn.setAttribute("disabled", true);
+  spinner.classList.add("spinner-border");
+  spinner.classList.add("spinner-border-sm");
+
   try {
     const formData = new FormData(form);
     const res = await fetch("/career", {
@@ -29,7 +37,12 @@ async function handalSubmit(e) {
       body: formData,
     });
     const data = await res.json();
-    console.log(data);
+
+    // removing spinner effect
+    submit_btn.removeAttribute("disabled");
+    spinner.classList.remove("spinner-border");
+    spinner.classList.remove("spinner-border-sm");
+
     if (data.success) {
       const msg = document.getElementById("message");
       msg.classList.add("success");

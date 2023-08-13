@@ -18,7 +18,7 @@
         <li class="nav-item">
           <a
             class="nav-link kt-nav-link"
-            href="mailto:test@gmail.com"
+            href="mailto:connect@sivector.com"
             target="_blank"
             title="E-mail us"
           >
@@ -53,18 +53,25 @@
             target="_blank"
             title="Call us"
           >
-            <img src="../img/phone-call.png" class="kt-social-icon" id="gmail" />
+            <img src="../img/telephone.png" class="kt-social-icon" id="gmail" />
             | +918460525625
           </a>
         </li>
       </ul>
     </div>
 
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">
-          <img src="../img/logo.png" alt="SIvector logo" class="kt-nav-logo" />
-        </a>
+        <div class="d-flex align-items-baseline">
+          <a class="navbar-brand" href="/">
+            <img src="../img/logo.png" alt="SIvector logo" class="kt-nav-logo" />
+          </a>
+          <p class="fs-3 pe-2">|</p>
+          <p class="navbar-brand text-wrap">Where your trust meets reliable partner</p>
+        </div>
+        <!-- <a class="navbar-brand" href="/">
+          <img src="img/logo.png" alt="SIvector logo" class="kt-nav-logo" />
+        </a> -->
         <div class="me-2">
           <button
             class="navbar-toggler"
@@ -83,7 +90,7 @@
                 <a class="nav-link" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/#aboutus">About Us</a>
+                <a class="nav-link" href="#aboutus">About Us</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -97,25 +104,25 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#card-1"
+                    <a class="dropdown-item" href="/services/#card-1"
                       >DFT Architecture and Implementation
                     </a>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#card-2">Scan Insertion </a></li>
+                  <li><a class="dropdown-item" href="/services/#card-2">Scan Insertion </a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item text-wrap" href="#card-3"
+                    <a class="dropdown-item text-wrap" href="/services/#card-3"
                       >ATPG Pattern Generation for Different Fault Models
                     </a>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#card-4">MBIST </a></li>
+                  <li><a class="dropdown-item" href="/services/#card-4">MBIST </a></li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#card-5">IO Testing </a></li>
+                  <li><a class="dropdown-item" href="/services/#card-5">IO Testing </a></li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#card-6"
+                    <a class="dropdown-item" href="/services/#card-6"
                       >Post Silicon Debug and ATE Support
                     </a>
                   </li>
@@ -170,10 +177,10 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
+                <a class="nav-link" href="/career">Careers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/#contactus">Contact Us</a>
+                <a class="nav-link" href="#contactus">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -181,37 +188,100 @@
       </div>
     </nav>
 
-
-    <footer class="conatiner-fluid pt-2" style="background-color: #4c0bce; color: white;">
-      <h3 class="text-center">Contact Info</h3>
-      </hr>
-      <div class="row">
-        <div class="col ms-2">
-          <div class="d-flex flex-column ps-4 fs-3">Address</div>
-          <div class="d-flex">
-            <img src="../img/placeholder.png" style="width: 2rem; height: 2rem;">
-            <p>502, ABC building 
-            </br>Test road, on some area
-            </br>Famouse city, Gujarat
-            </br>xyz society, Near famouse landmark
-            </br>INDIA
-          </p>
+    <section id="contactus">
+      <p class="text-center mt-2 fs-3 kt-head-color py-3 kt-services">
+        Contact Us
+      </p>
+      <div class="card mb-3 mx-auto col-8">
+        <div class="row g-0 col">
+          <div class="col me-3">
+            <img
+              src="../img/getin-touch.webp"
+              class="img-fluid rounded-start"
+              style="height: 100%"
+              alt="get in touch img"
+            />
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <h5 class="card-title">Get In Touch<span id="message" class="ms-3" style="font-size: .8rem;"></span></h5>
+              <form id="form">
+                <div class="row mb-3">
+                  <input
+                    type="text"
+                    class="form-control col me-3"
+                    placeholder="Name"
+                    name="name"
+                    id="name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    class="form-control col"
+                    placeholder="E-mail"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="row mb-3">
+                  <input
+                    type="tel"
+                    class="form-control col me-3"
+                    placeholder="Contact No"
+                    name="contact"
+                    id="contact"
+                    required
+                  />
+                  <input
+                    type="text"
+                    class="form-control col"
+                    placeholder="Subject"
+                    name="subject"
+                    id="subject"
+                    required
+                  />
+                </div>
+                <textarea
+                  type="text"
+                  id="textarea"
+                  rows="5"
+                  class="row mb-3"
+                  style="width: 100%"
+                  placeholder="Your Inquiry"
+                  name="text"
+                  required
+                ></textarea>
+                <button type="submit" class="btn btn-primary" id="btn">
+                  <span class="" id="spinner" role="status" aria-hidden="true"></span>
+                  Submit
+                </button>
+                
+              </form>
+            </div>
           </div>
         </div>
-        <div class="col ms-2">
-          <div class="d-flex flex-column ps-4 fs-3">Phone</div>
+      </div>
+    </section>
+
+    <footer class="py-4 d-flex flex-column align-items-center" style="background-color: #3e67b6; color: white;">
+      <h3 class="text-center">Contact Info</h3>
+      <div class="d-flex flex-column" style="width: fit-content;">
+        <div class="">
+          <div class="d-flex flex-column fs-3">Phone</div>
           <div class="d-flex">
             <a href="tel:+918460525625" style="text-decoration: none; color: white;">
-              <img src="../img/phone-call.png" style="width: 2rem;">
+              <img src="../img/telephone.png" style="width: 2rem;">
               +918460525625</a>
           </div>
         </div>
-        <div class="col ms-2">
-          <div class="d-flex flex-column ps-4 fs-3">Email</div>
+        <div class="">
+          <div class="d-flex flex-column fs-3">Email</div>
           <div class="d-flex">
-            <a href="emailto:test@gmail.com" style="text-decoration: none; color: white;">
+            <a href="mailto:connect@sivector.com" style="text-decoration: none; color: white;">
               <img src="../img/gmail.png" style="width: 2rem;">
-              connect@sivector.com</a>
+              connect@sivector.com
+            </a>
           </div>
         </div>
       </div>
