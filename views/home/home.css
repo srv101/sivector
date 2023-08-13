@@ -1,0 +1,60 @@
+/* social media bar */
+
+.kt-social{
+    background-color: #144bba
+}
+
+.kt-social-icon{
+    width:1.5rem;
+}
+
+.kt-nav-link{
+    color: white;
+}
+
+.kt-nav-link:visited{
+    color: white;
+}
+
+.kt-nav-link:hover{
+    color: white;
+}
+
+/* navbar */
+
+.kt-nav-logo{
+    width: 10rem;
+}
+
+.navbar{
+    padding: 0;
+}
+
+/* our services */
+
+.card-link{
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+.card-title{
+    text-overflow: ellipsis !important;
+}
+
+.card-img-top{
+    height: 18rem;
+}
+
+.kt-services{
+    background: linear-gradient(90deg, rgba(24,117,255,1) 0%, rgba(139,221,255,1) 70%);
+    /* background: linear-gradient(90deg, rgba(43,113,255,1) 0%, rgba(192,129,255,1) 100%); */
+}
+
+/* form handaling */
+.error{
+    color: red !important;
+}
+
+.success{
+    color: green !important;
+}

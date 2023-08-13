@@ -1,0 +1,48 @@
+
+/* social media bar */
+
+.kt-social{
+    background-color: blue;
+}
+
+.kt-social-icon{
+    width:1.5rem;
+}
+
+.kt-nav-link{
+    color: white;
+}
+
+.kt-nav-link:hover{
+    color: white;
+}
+
+/* navbar */
+
+.kt-nav-logo{
+    width: 10rem;
+}
+
+.navbar{
+    padding: 0;
+}
+
+/* our services */
+
+.card-link{
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+.card-title{
+    text-overflow: ellipsis !important;
+}
+
+
+
+/* testing color picker */
+#color {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
