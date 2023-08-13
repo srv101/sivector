@@ -35,16 +35,16 @@ app.get('/training', (req, res) => {
 app.post('/form', async (req, res) => {
     
     try {
-        await sendEmail(process.env.SMTP_EMAIL_FROM, `Inquery: ${req.body.subject}`, req.body.name, req.body.email, req.body.contact, req.body.textarea, null)
+        await sendEmail(process.env.SMTP_EMAIL_FROM, `Inquiry: ${req.body.subject}`, req.body.name, req.body.email, req.body.contact, req.body.textarea, null)
         res.json({
             success: true,
-            data: 'Inquery Send'
+            data: 'Inquiry Send'
         })
     } catch (err) {
         console.log(err.message)
         res.json({
             success: false,
-            data: 'Failed to Send Inquery'
+            data: 'Failed to Send Inquiry'
         })
     }
 
