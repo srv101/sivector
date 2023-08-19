@@ -19,7 +19,7 @@ app.use(express.static(path.resolve(__dirname, '../views')))
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    console.log(__dirname)
+    // console.log(__dirname)
     res.sendFile(path.resolve(__dirname, '../views', "home", 'home.html'))
 })
 
